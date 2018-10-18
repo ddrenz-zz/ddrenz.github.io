@@ -1,0 +1,3 @@
+[submodule "spectacle"]
+	path = spectacle
+	url = https://github.com/ddrenz/spectacle
