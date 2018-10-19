@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Test github pages config",
   "scripts": {
+    "dev": "jekyll serve",
     "build:spectacle:v1": "node ./spectacle/bin/spectacle -e -t assets/api-v1 _data/spec.json"
   },
   "repository": {
