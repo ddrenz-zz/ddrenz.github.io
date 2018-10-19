@@ -1,0 +1,18 @@
+{
+  "name": "ddrenz.github.io",
+  "version": "1.0.0",
+  "description": "Test github pages config",
+  "scripts": {
+    "build:spectacle:v1": "node ./spectacle/bin/spectacle -e -t assets/api-v1 _data/spec.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddrenz/ddrenz.github.io.git"
+  },
+  "author": "Dillon Drenzek",
+  "license": "ISC",
+  "devDependencies": {
+    "spectacle-docs": "^1.0.6"
+  }
+}
+
