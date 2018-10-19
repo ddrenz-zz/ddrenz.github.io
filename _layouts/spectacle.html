@@ -8,12 +8,16 @@
     <title>Test</title>
     <link rel="stylesheet" href="/{{ page.directory }}/stylesheets/foundation.min.css">
     <link rel="stylesheet" href="/{{ page.directory }}/stylesheets/spectacle.min.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="/{{ page.directory }}/javascripts/spectacle.min.js"></script>
 </head>
 
 <body>
-    {{ content }}
+    {% include header.html %}
+    <div class="content-frame">
+        {{ content }}
+    </div>
 </body>
 
 </html>

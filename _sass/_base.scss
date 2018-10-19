@@ -1,0 +1,23 @@
+@import 'vars';
+
+body {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+
+    > header {
+        position: absolute;
+        height: $header-height;
+        width: 100%;
+    }
+
+    > .content-frame {
+        position: absolute;
+        top: $header-height;
+        width: 100%;
+        height: calc(100% - #{$header-height});
+        > * {
+            height: 100%;
+        }
+    }
+}
