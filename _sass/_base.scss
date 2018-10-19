@@ -1,23 +1,35 @@
 @import 'vars';
 
 body {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
 
     > header {
-        position: absolute;
+        position: fixed;
         height: $header-height;
         width: 100%;
+        background: $header-bg-color;
+        z-index: $header-z-index;
+        top: 0;
+        padding: 0 2.15rem;
+
+        // @include breakpoint()
+
+        a {
+            height: 100%;
+            line-height: $header-height;
+            &:not(:first-child) {
+                margin-left: 15px;
+            }
+            &.nav-link {
+                color: #fafafa;
+            }
+        }
     }
 
     > .content-frame {
-        position: absolute;
-        top: $header-height;
+        position: relative;
+        margin-top: $header-height;
         width: 100%;
-        height: calc(100% - #{$header-height});
-        > * {
-            height: 100%;
-        }
+        z-index: $base-z-index;
+        overflow: hidden;
     }
 }

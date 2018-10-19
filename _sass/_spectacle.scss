@@ -1,21 +1,17 @@
 @import 'vars';
 
-// #spectacle {
-//     height: 100%;
-//     position: relative;
+#spectacle {
+    position: relative;
 
-//     #page {
-//         overflow:hidden;
-//     }
+    #sidebar {
+        height: calc(100vh - #{$header-height});
+        top: $header-height;
+    }
 
-//     #sidebar {
-//         height: calc(100vh - #{$header-height});
-//     }
-
-//     #sidebar,
-//     #docs {
-//         height: 100%;
-//         position: absolute;
-//         overflow: auto;
-//     }
-// }
+    .drawer-layout {
+        .floating-menu-icon {
+            z-index: $header-z-index + 1;
+            top: calc(#{$header-height} + .75rem);
+        }
+    }
+}
